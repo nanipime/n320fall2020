@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body {
+            background: white;
+            animation: show 10s ease ;
+        }
+
+        h1 {
+            color: #062A78;
+        }
+
+        #topBar {
+            fill:#062A78;
+        }
+
+        #box1 {
+            fill:rgb(160, 18, 160);
+        /* position: absolute; */
+        }
+
+        #box1:hover {
+            animation: hide 5s ease;
+        }
+        
+        #box2, #box3, #box4, #box4, #box5, #box6 {
+            fill:rgb(160, 18, 160);
+        }
+
+        #box2:hover {
+            fill-opacity: 50%;
+        }
+
+        #box3:hover {
+            fill-opacity: 50%;
+        }
+
+        #box4:hover {
+            fill-opacity: 50%;
+        }
+
+        #box5:hover {
+            fill-opacity: 50%;
+        }
+
+        #box6:hover {
+            fill-opacity: 50%;
+        }
+
+        @keyframes show {
+            0% { opacity: 0; }
+            /* 10% { opacity: 1; } */
+            /* 15% {opacity: 0; } */
+            100% { opacity: 1; }
+        }
+
+        @keyframes hide {
+            0% {opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+
+
+        /* #box1 {
+            animation: hideshow 10s ease infinite;
+        }
+
+        #box2 {
+            opacity: 0;
+            animation: hideshow 10s 1.5s ease infinite;
+        }
+
+        #box3 {
+            opacity: 0;
+            animation: hideshow 10s 3s ease infinite;
+        } */
+
+        /* .onload {
+            animation-name: fadeIn;
+            animation-duration: 1s;
+        
+        
+        @keyframes fadeIn {
+            0% {opacity:0;}
+            100% {opacity:1;}
+        } */
+
+        /* .statusbutton {
+            background-color: #aa80ff;
+            border-radius: 10px;
+            color: #fff;
+        }
+        .status textarea {
+            border: 1px solid #999;
+            border-radius: 10px;
+            width: 23em;
+            height: 1em;
+        } */
+
+        /* css animations */
+        /* .selected {
+            animation-name: selectedAnim;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        .deselected {
+            animation-name: selectedAnim;
+            animation-duration: 1s;
+            animation-direction: reverse;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes selectedAnim {
+            from { height: 1em; background-color: #fff; }
+            to { height: 3em; background-color: #ffcfe4 }
+        } */
+    </style>
+
+</head>
+<body>
+   <h1 id=heading>Title</h1>
+    
+    <svg id="shapes" width=800 height=600>
+        <rect y=0 x=0 id="topBar" height=100 width=100% />
+        <rect y=150 x=20 id="box1" height=150 width=230 />
+        <rect y=150 x=285 id="box2" height=150 width=230 />
+        <rect y=150 x=550 id="box3" height=150 width=230 />
+        <rect y=335 x=20 id="box4" height=150 width=230 />
+        <rect y=335 x=285 id="box5" height=150 width=230 />
+        <rect y=335 x=550 id="box6" height=150 width=230 />
+    </svg>
+
+</body>
+</html>
